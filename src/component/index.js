@@ -1,0 +1,1 @@
+export {NewsNavBar} from './navBar';

@@ -1,0 +1,1 @@
+export {default as NewsNavBar} from './NewsNavBar.js';

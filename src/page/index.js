@@ -1,0 +1,7 @@
+export {default as TestPage} from './TestPage'
+export {default as TabPage} from './TabPage'
+export {default as BookmarkPage} from './BookmarkPage'
+export {default as ArticlePage} from './ArticlePage'
+export {default as AdminPage} from './AdminPage'
+export {default as SearchPage} from './SearchPage'
+export {default as ErrorPage} from './ErrorPage'

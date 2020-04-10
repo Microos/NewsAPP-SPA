@@ -28,10 +28,13 @@ const SectionBadge = (props) => {
         backgroundColor: colorMapping[text] ? colorMapping[text] : colorDefault,
     };
     return (
-        <Badge style={style}
-               className={textColorClass}>
-            {text}
-        </Badge>
+        <div className={props.className || ""} style={{fontSize: props.fontSize || "1rem"}}>
+            <Badge style={style}
+                   className={textColorClass}>
+                {text}
+            </Badge>
+        </div>
+
     )
 };
 

@@ -92,9 +92,8 @@ const TinyCard = (props) => {
     if (variant == 'favcard') {
         badges = (
             <>
-                <SectionBadge text={section}/>
-                <span className="mx-1"/>
-                <SectionBadge text={srcName}/>
+                <SectionBadge text={section} fontSize="0.95rem" className='mr-1'/>
+                <SectionBadge text={srcName} fontSize="0.95rem"/>
             </>
         );
 
@@ -131,7 +130,8 @@ const TinyCard = (props) => {
                   onClick={() => cardOnClick(data.src, section, artId)}>
 
                 <Card.Body className='d-flex flex-column justify-content-between'>
-                    <Card.Title className='font-italic font-weight-bold' style={{fontSize: '0.90rem', minHeight: '2rem'}}>
+                    <Card.Title className='font-italic font-weight-bold'
+                                style={{fontSize: '0.90rem', minHeight: '2rem'}}>
                         <span className='mr-1'>{title}</span>
                         <span style={{fontStyle: "normal"}}>
                         <ShareButton id={artId} onClick={() => {

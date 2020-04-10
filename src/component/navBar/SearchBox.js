@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useEffect} from "react";
 import AsyncSelect from 'react-select/async';
 import searchSuggest from "./searchSuggest";
 import {debounce} from "underscore";

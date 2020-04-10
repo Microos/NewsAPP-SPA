@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from "react";
 import {getArticle} from "../component/misc/api";
 import {LoadingSpinner, FavoriteButton} from "../component/misc";
-import {Accordion, Card, Image, Row, Col, Button} from "react-bootstrap";
+import {Accordion, Card, Row, Col} from "react-bootstrap";
 import {favManager} from "../component/misc/localStorageManager";
-import {sentenceSplit} from "../component/misc/helper";
+import {sentenceSplitv2} from "../component/misc/helper";
 import {useAccordionToggle} from 'react-bootstrap/AccordionToggle';
 import {IoIosArrowUp, IoIosArrowDown} from 'react-icons/io'
 import {SocialMediaButton} from "../component/misc";
@@ -98,21 +98,22 @@ const ArticlePage = (props) => {
         // if description > 4 sentences/6 lines, add a toggle;
         const threshold = 4;
         const text = data.description;
-        const sents = sentenceSplit(text);
+        // const sents = sentenceSplit(text);
+        const sents = sentenceSplitv2(text);
 
-
-        if (sents.length > 4 && !expanded) {
-            const puncts = sents[3].match(/\W$/);
-            if (puncts.length > 0) {
-                sents[3] = sents[3].substr(0, sents[3].length - 1) + '...';
-            } else {
-                sents[3] = sents[3] + '...';
-            }
-        }
+        //
+        // if (sents.length > 4 && !expanded) {
+        //     const puncts = sents[3].match(/\W$/);
+        //     if (puncts.length > 0) {
+        //         sents[3] = sents[3].substr(0, sents[3].length - 1) + '...';
+        //     } else {
+        //         sents[3] = sents[3] + '...';
+        //     }
+        // }
 
         const cardText = (
             <div className="multiline-text mt-1 mb-1">
-                {sents.slice(0, 4).join("")}
+                {sents.slice(0, 4).join(" ")}
             </div>
         );
 
@@ -122,7 +123,7 @@ const ArticlePage = (props) => {
                 <div>
                     <Accordion.Collapse eventKey="extra-text">
                         <Card.Text className="multiline-text mt-3">
-                            {sents.slice(4).join("")}
+                            {sents.slice(4).join(" ")}
                         </Card.Text>
                     </Accordion.Collapse>
                     <div className='d-flex justify-content-end hover-pointer'>

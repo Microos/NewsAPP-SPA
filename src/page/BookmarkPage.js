@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import {favManager} from "../component/misc/localStorageManager";
-import {Row, Col} from "react-bootstrap";
+import {Col} from "react-bootstrap";
 import TinyCard from "../component/card/TinyCard";
 
 

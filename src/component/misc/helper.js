@@ -1,3 +1,5 @@
+import {split} from 'sentence-splitter'
+
 function sentenceSplit(text) {
     const sents = text.match(/[^\.!\?]+[\.!\?]+/g);
     for (let i = 0; i < sents.length; i++) {
@@ -13,7 +15,16 @@ function sentenceSplit(text) {
 }
 
 
+function sentenceSplitv2(text) {
+    let ret = [];
+    const sents = split(text);
+    console.log('split debug:', sents);
+    for (let s of sents) {
+        if (s.type == 'Sentence') {
+            ret.push(s.raw);
+        }
+    }
+    return ret;
+}
 
-
-
-export {sentenceSplit};
+export {sentenceSplit, sentenceSplitv2};

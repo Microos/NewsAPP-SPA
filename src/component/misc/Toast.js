@@ -1,5 +1,5 @@
 import React from 'react';
-import {ToastContainer, toast, Zoom} from 'react-toastify';
+import {toast, Zoom} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const css = {

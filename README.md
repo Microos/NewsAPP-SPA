@@ -14,11 +14,9 @@ View the live demo [here](https://cs571hw8-dep2.appspot.com/)
 
   <img src="https://i.ibb.co/qdpPGfq/Jietu20200508-150017.jpg" width="500px">
 
-
-
 - Article Page
 
-<img src="https://i.ibb.co/Q88v5vh/screencapture-cs571hw8-dep2-appspot-article-2020-05-08-15-01-35.png" width="450px">
+  <img src="https://i.ibb.co/Q88v5vh/screencapture-cs571hw8-dep2-appspot-article-2020-05-08-15-01-35.png" width="450px">
 
 ## Mobile View
 

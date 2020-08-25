@@ -4,7 +4,7 @@ A single page application using ReactJS + Bootstrap for [frontend](https://githu
 
 (Current branch: backend)
 
-__View the live demo__ [here](https://cs571hw8-dep2.appspot.com/)
+__View the live demo__ [here](https://spa-newsapp.wl.r.appspot.com/)
 
 
 

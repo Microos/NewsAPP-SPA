@@ -4,7 +4,7 @@ A single page application using ReactJS + Bootstrap for frontend, and NodeJS + E
 
 (Current branch: frontend)
 
-View the live demo [here](https://cs571hw8-dep2.appspot.com/)
+View the live demo [here](https://spa-newsapp.wl.r.appspot.com/)
 
 
 
